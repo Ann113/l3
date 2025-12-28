@@ -164,8 +164,6 @@ void demonstrateTree() {
     std::cout << "\n=== Demonstrating Binary Tree ===" << std::endl;
     
     Tree tree;
-    
-    // Вставляем элементы для создания полного бинарного дерева
     tree.insert("F");
     tree.insert("B");
     tree.insert("G");

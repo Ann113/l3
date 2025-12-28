@@ -18,7 +18,7 @@ void Serializer::saveToFile(const std::string& filename,
     }
     
     // Магическое число для проверки формата
-    const int MAGIC_NUMBER = 0x4C414233; // "LAB3"
+    const int MAGIC_NUMBER = 0x4C414233;
     file.write(reinterpret_cast<const char*>(&MAGIC_NUMBER), sizeof(MAGIC_NUMBER));
     
     // Версия формата
@@ -53,12 +53,9 @@ void Serializer::saveArray(std::ofstream& file, const Array& array) {
 void Serializer::saveSinglyList(std::ofstream& file, const SinglyList& list) {
     // Для списка нужно пройти по всем элементам
     // В реальной реализации нужно добавить метод для получения всех элементов
-    // Здесь упрощенная версия
     int size = list.getSize();
     file.write(reinterpret_cast<const char*>(&size), sizeof(size));
     
-    // В реальном проекте нужно реализовать итератор для списка
-    // или метод для получения всех элементов
 }
 
 void Serializer::saveDoublyList(std::ofstream& file, const DoublyList& list) {
@@ -83,13 +80,11 @@ void Serializer::saveHashTable(std::ofstream& file, const HashTable& hashTable) 
     // Хеш-таблица имеет собственный метод сериализации
     // Здесь можно просто вызвать его или сохранить в общий файл
     hashTable.serializeToFile("temp_hash.bin");
-    // В реальной реализации нужно интегрировать в общий формат
 }
 
 void Serializer::saveTree(std::ofstream& file, const Tree& tree) {
     // Дерево имеет собственный метод сериализации
     tree.serializeToFile("temp_tree.bin");
-    // В реальной реализации нужно интегрировать в общий формат
 }
 
 void Serializer::loadFromFile(const std::string& filename,
@@ -154,7 +149,6 @@ void Serializer::loadSinglyList(std::ifstream& file, SinglyList& list) {
     file.read(reinterpret_cast<char*>(&size), sizeof(size));
     
     // Очищаем список
-    // В реальной реализации нужен метод clear()
     for (int i = 0; i < size; i++) {
         int strSize;
         file.read(reinterpret_cast<char*>(&strSize), sizeof(strSize));
@@ -162,8 +156,6 @@ void Serializer::loadSinglyList(std::ifstream& file, SinglyList& list) {
         std::string value(strSize, '\0');
         file.read(&value[0], strSize);
         
-        // В реальной реализации нужен метод добавления
-        // list.insertBack(value);
     }
 }
 
@@ -178,14 +170,12 @@ void Serializer::loadStack(std::ifstream& file, Stack& stack) {
     int size;
     file.read(reinterpret_cast<char*>(&size), sizeof(size));
     
-    // Для стека нужен специальный метод загрузки
 }
 
 void Serializer::loadQueue(std::ifstream& file, Queue& queue) {
     int size;
     file.read(reinterpret_cast<char*>(&size), sizeof(size));
     
-    // Для очереди нужен специальный метод загрузки
 }
 
 void Serializer::loadHashTable(std::ifstream& file, HashTable& hashTable) {
