@@ -14,7 +14,7 @@ Tree::~Tree() {
 }
 
 void Tree::clear() {
-    destroyTree(root);
+    destroyTree(root); 
     root = nullptr;
 }
 

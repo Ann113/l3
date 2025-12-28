@@ -11,7 +11,7 @@ Queue::~Queue() {
 
 void Queue::clear() {
     while (!isEmpty()) {
-        dequeue();
+        dequeue(); 
     }
 }
 

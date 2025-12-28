@@ -13,7 +13,7 @@ Array::Array(int initialCapacity) : capacity(initialCapacity), size(0) {
     }
     data.resize(capacity);
 }
-
+ 
 Array::~Array() {
     // vector сам очистит память
 }

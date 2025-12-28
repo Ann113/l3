@@ -6,7 +6,7 @@
 TEST(TreeTest, DefaultConstructor) {
     Tree tree;
     EXPECT_TRUE(tree.isEmpty());
-    EXPECT_EQ(tree.size(), 0);
+    EXPECT_EQ(tree.size(), 0); 
     EXPECT_EQ(tree.height(), -1);
 }
 

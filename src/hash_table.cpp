@@ -11,7 +11,7 @@ HashTable::HashTable(int initialCapacity, double threshold)
       loadFactorThreshold(threshold > 0.1 && threshold < 1.0 ? threshold : 0.75) {
     
     table.resize(capacity, nullptr);
-}
+} 
 
 HashTable::~HashTable() {
     clear();

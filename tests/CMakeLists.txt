@@ -45,7 +45,7 @@ add_executable(run_tests
     test_stack.cpp
     test_queue.cpp
     test_hash_table.cpp
-    test_tree.cpp
+    test_tree.cpp 
 )
 target_link_libraries(run_tests GTest::gtest GTest::gtest_main)
 target_include_directories(run_tests PRIVATE ${CMAKE_SOURCE_DIR}/src)

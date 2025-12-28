@@ -13,7 +13,7 @@ TEST(StackTest, Push) {
     stack.push("first");
     
     EXPECT_EQ(stack.getSize(), 1);
-    EXPECT_FALSE(stack.isEmpty());
+    EXPECT_FALSE(stack.isEmpty()); 
     
     stack.push("second");
     EXPECT_EQ(stack.getSize(), 2);

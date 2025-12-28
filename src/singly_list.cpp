@@ -234,7 +234,7 @@ void SinglyList::serializeToFile(const std::string& filename) const {
     if (!file.is_open()) {
         throw std::runtime_error("Cannot open file for writing");
     }
-    
+     
     file.write(reinterpret_cast<const char*>(&size), sizeof(size));
     
     Node* current = head;

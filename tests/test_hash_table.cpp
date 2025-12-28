@@ -14,7 +14,7 @@ TEST(HashTableTest, ParameterizedConstructor) {
     EXPECT_EQ(ht.getCapacity(), 16);
     EXPECT_EQ(ht.getSize(), 0);
 }
-
+ 
 TEST(HashTableTest, Insert) {
     HashTable ht;
     ht.insert(1, "Alice");

@@ -14,7 +14,7 @@
 std::string generateRandomString(int length) {
     static const char alphanum[] =
         "0123456789"
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
         "abcdefghijklmnopqrstuvwxyz";
     
     std::string result;

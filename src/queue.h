@@ -13,7 +13,7 @@ private:
     
     Node* front;
     Node* rear;
-    int size;
+    int size; 
     
 public:
     // Конструкторы и деструктор

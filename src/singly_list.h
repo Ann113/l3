@@ -38,7 +38,7 @@ public:
     
     bool search(const std::string& value) const;
     
-    void printForward() const;
+    void printForward() const; 
     int getSize() const { return size; }
     bool isEmpty() const { return head == nullptr; }
     void clear();

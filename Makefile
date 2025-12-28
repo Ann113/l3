@@ -22,7 +22,7 @@ debug:
 
 # Run all tests
 test: debug
-	@echo "Running tests..."
+	@echo "Running tests..." 
 	@cd $(BUILD_DIR) && ./test_array
 	@cd $(BUILD_DIR) && ./test_list
 	@cd $(BUILD_DIR) && ./test_stack

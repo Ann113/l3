@@ -12,7 +12,7 @@ Stack::~Stack() {
 
 void Stack::clear() {
     while (!isEmpty()) {
-        pop();
+        pop(); 
     }
 }
 

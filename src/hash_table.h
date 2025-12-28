@@ -10,7 +10,7 @@ private:
     // Структура для элемента цепочки
     struct HashNode {
         int key;
-        std::string value;
+        std::string value; 
         HashNode* next;
         HashNode(int k, const std::string& v) : key(k), value(v), next(nullptr) {}
     };

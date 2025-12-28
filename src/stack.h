@@ -26,7 +26,7 @@ public:
     // Основные операции
     void push(const std::string& value);
     std::string pop();
-    std::string peek() const;
+    std::string peek() const; 
     
     // Утилиты
     bool isEmpty() const { return top == nullptr; }

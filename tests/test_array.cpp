@@ -17,7 +17,7 @@ TEST(ArrayTest, ParameterizedConstructor) {
 
 TEST(ArrayTest, PushBack) {
     Array arr;
-    arr.push_back("test1");
+    arr.push_back("test1"); 
     EXPECT_EQ(arr.length(), 1);
     EXPECT_EQ(arr.get(0), "test1");
     

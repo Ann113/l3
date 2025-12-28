@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-
+ 
 class Array {
 private:
     std::vector<std::string> data;

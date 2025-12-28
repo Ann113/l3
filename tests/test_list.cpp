@@ -15,7 +15,7 @@ TEST(SinglyListTest, DefaultConstructor) {
 TEST(SinglyListTest, InsertFrontEmpty) {
     SinglyList list;
     list.insertFront("a");
-    EXPECT_EQ(list.getSize(), 1);
+    EXPECT_EQ(list.getSize(), 1); 
     EXPECT_FALSE(list.isEmpty());
 }
 

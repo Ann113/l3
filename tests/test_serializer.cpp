@@ -13,7 +13,7 @@
 TEST(SerializerTest, SaveToFileThrowsWhenCannotOpen) {
     Array array;
     SinglyList slist;
-    DoublyList dlist;
+    DoublyList dlist; 
     Stack stack;
     Queue queue;
     HashTable hashTable(10);

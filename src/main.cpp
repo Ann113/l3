@@ -165,7 +165,7 @@ void demonstrateTree() {
     
     Tree tree;
     tree.insert("F");
-    tree.insert("B");
+    tree.insert("B"); 
     tree.insert("G");
     tree.insert("A");
     tree.insert("D");

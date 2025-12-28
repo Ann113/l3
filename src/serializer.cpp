@@ -175,7 +175,7 @@ void Serializer::loadStack(std::ifstream& file, Stack& stack) {
 void Serializer::loadQueue(std::ifstream& file, Queue& queue) {
     int size;
     file.read(reinterpret_cast<char*>(&size), sizeof(size));
-    
+     
 }
 
 void Serializer::loadHashTable(std::ifstream& file, HashTable& hashTable) {

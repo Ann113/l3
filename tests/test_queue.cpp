@@ -5,7 +5,7 @@
 TEST(QueueTest, DefaultConstructor) {
     Queue queue;
     EXPECT_EQ(queue.getSize(), 0);
-    EXPECT_TRUE(queue.isEmpty());
+    EXPECT_TRUE(queue.isEmpty()); 
 }
 
 TEST(QueueTest, Enqueue) {

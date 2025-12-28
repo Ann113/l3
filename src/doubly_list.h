@@ -37,7 +37,7 @@ public:
     void removeValue(const std::string& value);
     void removeBefore(const std::string& target);
     void removeAfter(const std::string& target);
-    
+     
     // Поиск
     bool search(const std::string& value) const;
     

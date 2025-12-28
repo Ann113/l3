@@ -20,7 +20,7 @@ set(SRC_FILES
 add_executable(main src/main.cpp ${SRC_FILES})
 
 # Найти GTest
-find_package(GTest REQUIRED)
+find_package(GTest REQUIRED) 
 include_directories(${GTEST_INCLUDE_DIRS})
 
 # Тесты

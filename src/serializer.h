@@ -33,7 +33,7 @@ public:
                             HashTable& hashTable,
                             Tree& tree);
     
-private:
+private: 
     static void saveArray(std::ofstream& file, const Array& array);
     static void saveSinglyList(std::ofstream& file, const SinglyList& list);
     static void saveDoublyList(std::ofstream& file, const DoublyList& list);

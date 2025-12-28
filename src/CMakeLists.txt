@@ -10,7 +10,7 @@ set(SOURCES
     serializer.cpp
     main.cpp
 )
-
+ 
 # Создаем основную программу
 add_executable(main ${SOURCES})
 target_include_directories(main PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})

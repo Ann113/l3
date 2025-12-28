@@ -221,7 +221,7 @@ void DoublyList::printBackward() const {
             std::cout << " <-> ";
         }
         current = current->prev;
-    }
+    } 
     std::cout << "]" << std::endl;
 }
 
